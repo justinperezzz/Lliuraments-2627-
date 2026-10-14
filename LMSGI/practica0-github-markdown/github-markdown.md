@@ -35,9 +35,9 @@
 5. Mostrar un exemple de com es fa servir el vostre llenguatge i explicar-lo.
 ---
 6. Explicar un cas d’ús en el qual el vostre llenguatge de marques no seria el més adient.
-
+---
 7. Justificar per què el vostre llenguatge es pot classificar com "de marques".
-
+---
 ## Rúbrica d’avaluació
 
 >[!CAUTION]
@@ -52,7 +52,7 @@ Atenció: l’incompliment de les instruccions de lliurament impliquen la NO cor
 |Introducció als llenguatges de marques.     |No s’ha realitzat o conté errors molt greus.     |Explicació superficial o amb errors lleus.     |Explicació clara, detallada i correcta.
 Explicació del llenguatge i regles d’ús     |No s’ha realitzat o conté errors molt greus.     |Explicació superficial o amb errors lleus.     |Explicació clara, detallada i correcta.
 Cas d’ús (si s’adapta)     |No s’ha realitzat o conté errors molt greus.     |Explicació superficial o amb errors lleus.     |Explicació clara, detallada i correcta.
-Cas d’ús (no s’adapta)     1No s’ha realitzat o conté errors molt greus.    Explicació clara, detallada i correcta|    |Explicació superficial o amb errors lleus.     |Explicació clara, detallada i correcta.
+Cas d’ús (no s’adapta)     |No s’ha realitzat o conté errors molt greus.    |Explicació clara, detallada i correcta    |Explicació superficial o amb errors lleus.     |Explicació clara, detallada i correcta.
 Exemple     |No s’ha realitzat o conté errors molt greus.     |Explicació superficial o amb errors lleus.     |Explicació clara, detallada i correcta.
 Classificació     |No s’ha realitzat o conté errors molt greus.     |Explicació superficial o amb errors lleus.     |Explicació clara, detallada i correcta.
 Justificació llenguatge de marques.     |No s’ha realitzat o conté errors molt greus.     |Explicació superficial o amb errors lleus.     |Explicació clara, detallada i correcta.
