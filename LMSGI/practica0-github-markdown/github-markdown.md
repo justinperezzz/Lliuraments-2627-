@@ -2,45 +2,45 @@
 ## Descripció
 
 >[!NOTE]  
+**Objectiu**: Aprofundir i posar en pràctica els coneixements adquirits sobre l'ús i les característiques principals dels llenguatges de marques.
 
+>[!IMPORTANT]
+**Desenvolupament**: En parelles.
 
-Objectiu: Aprofundir i posar en pràctica els coneixements adquirits sobre l'ús i les característiques principals dels llenguatges de marques.
+>[!TIP]
+**Lliurament**: A través del `Moodle` en format presentació (`odt`, `ppt`, `pptx` o `pdf`).
 
+## Enunciat
 
-Desenvolupament: En parelles.
+**L’objectiu d’aquest exercici és aprofundir en els conceptes relacionats amb les característiques inherents als llenguatges de marques mitjançant la creació d’un llenguatge propi, heu de tenir en compte que, per a poder classificar la vostra creació com a llenguatge de marques, s’han de complir una sèrie de requisits:**
 
+> - El llenguatge s’ha de basar en text pla.
 
-Lliurament: A través del Moodle en format presentació (odt, ppt, pptx o pdf).
-Enunciat
+> - Ha de fer ús de metadades (no confondre amb metallenguatge).
 
-L’objectiu d’aquest exercici és aprofundir en els conceptes relacionats amb les característiques inherents als llenguatges de marques mitjançant la creació d’un llenguatge propi, heu de tenir en compte que, per a poder classificar la vostra creació com a llenguatge de marques, s’han de complir una sèrie de requisits:
+> - N’ha de facilitar el procés automàtic de les dades per part d’un programa informàtic.
 
-        El llenguatge s’ha de basar en text pla.
+> - N’ha de facilitar la representació (o la interpretació) de les dades emmagatzemades.
 
-        Ha de fer ús de metadades (no confondre amb metallenguatge).
+## Un cop hàgiu acabat, prepareu una presentació per a explicar el següent:
 
-        N’ha de facilitar el procés automàtic de les dades per part d’un programa informàtic.
+1. Una introducció als llenguatges de marques: orígens, per a què es fan servir, etc.
 
-        N’ha de facilitar la representació (o la interpretació) de les dades emmagatzemades.
+2. Una introducció al vostre llenguatge de marques, explicació de les regles que heu definit.
 
-Un cop hàgiu acabat, prepareu una presentació per a explicar el següent:
+3. Classificar el vostre llenguatge de programació (procedimental i presentació; descriptiu o semàntic) i justificar aquesta classificació.
 
-    Una introducció als llenguatges de marques: orígens, per a què es fan servir, etc.
+4. Explicar un cas d’ús en el qual es podria fer servir el vostre llenguatge de marques.
 
-    Una introducció al vostre llenguatge de marques, explicació de les regles que heu definit.
+5. Mostrar un exemple de com es fa servir el vostre llenguatge i explicar-lo.
 
-    Classificar el vostre llenguatge de programació (procedimental i presentació; descriptiu o semàntic) i justificar aquesta classificació.
+6. Explicar un cas d’ús en el qual el vostre llenguatge de marques no seria el més adient.
 
-    Explicar un cas d’ús en el qual es podria fer servir el vostre llenguatge de marques.
+7. Justificar per què el vostre llenguatge es pot classificar com "de marques".
 
-    Mostrar un exemple de com es fa servir el vostre llenguatge i explicar-lo.
+## Rúbrica d’avaluació
 
-    Explicar un cas d’ús en el qual el vostre llenguatge de marques no seria el més adient.
-
-    Justificar per què el vostre llenguatge es pot classificar com "de marques".
-
-Rúbrica d’avaluació
-
+>[!CAUTION]
 Atenció: l’incompliment de les instruccions de lliurament impliquen la NO correcció de la pràctica i una nota de 0 punts. Cal seguir totes les instruccions estrictament al peu de la lletra.
 
 
