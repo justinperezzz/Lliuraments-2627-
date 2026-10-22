@@ -1,3 +1,4 @@
+``` mermaid
 erDiagram
 Enemic {
     string Codi PK "NOT NULL"
@@ -51,3 +52,4 @@ HABILITAT }O--O{ PERSONATGE : Poseeix
 PERSONATGE ||--|| MASCOTA : Acompanya
 PERSONATGE }O--O{ ITEM : Equipa 
 MASCOTA }o--o{ ITEM : Carrega
+``
