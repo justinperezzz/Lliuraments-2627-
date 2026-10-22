@@ -1,4 +1,4 @@
-``` mermaid
+```mermaid
 erDiagram
 Enemic {
     string Codi PK "NOT NULL"
