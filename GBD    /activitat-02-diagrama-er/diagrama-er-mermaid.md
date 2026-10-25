@@ -137,3 +137,50 @@ Un personaje puede poseer varias habilidades, y una misma habilidad puede estar 
 erDiagram
     PERSONATGE }o--o{ HABILITAT : "Poseeix"
 ```
+
+### 2.4 Combina amb (Habilitat – Habilitat)
+Es una relación reflexiva (o recursiva): la entidad HABILITAT se relaciona consigo misma. Una habilidad puede combinarse con varias habilidades, y puede aparecer en varias combinaciones: relación M:N.
+
+```mermaid
+erDiagram
+    HABILITAT }o--o{ HABILITAT : "Combina amb"
+```
+
+### 2.5 Acompanya (Mascota – Personatge)
+Relación 1:1: cada mascota acompaña exactamente a un personaje y cada personaje está acompañado por exactamente una mascota. Se escribe MASCOTA primero para que la etiqueta se lea de forma natural ("una mascota acompaña a un personaje").
+
+En esta propuesta se usa || en los dos extremos, lo que supone obligatoriedad en ambos sentidos; el PDF indica el máximo 1 pero no el mínimo.
+
+```mermaid
+erDiagram
+    MASCOTA ||--|| PERSONATGE : "Acompanya"
+```
+
+### 2.6 Equipa (Personatge – Item)
+Un personaje puede equipar varios ítems, y un ítem puede estar equipado por varios personajes: relación M:N.
+
+```mermaid
+erDiagram
+    PERSONATGE }o--o{ ITEM : "Equipa"
+```
+
+### 2.7 Carrega (Mascota – Item)
+El PDF dibuja esta relación pero no indica su cardinalidad. Para poder representarla se propone como hipótesis una relación 1:N: una mascota puede cargar cero o varios ítems, y cada ítem puede estar cargado por una mascota como máximo (símbolo |o: cero o uno). Esta decisión debe confirmarse con el profesor.
+
+```mermaid
+erDiagram
+    MASCOTA |o--o{ ITEM : "Carrega"
+```
+
+## 3. Resumen de decisiones e hipótesis
+
+| Decisión                                     | Justificación                                                   |
+| -------------------------------------------- | --------------------------------------------------------------- |
+| Tipos de datos (int, string, float, boolean) | El PDF no los especifica; son una propuesta.                    |
+| Num_Chip en lugar de Num.Chip                | Normalización para mantener una nomenclatura uniforme.          |
+| Mesures desglosado en X, Y, Z                | Convención de la guía para atributos compuestos.                |
+| Comerciable representado una sola vez        | Aparece duplicado en el PDF; parece un error del dibujo.        |
+| Mínimo 0 en las relaciones N:M y M:N         | El PDF solo indica los máximos; se asume participación parcial. |
+| \\\|\\\| en los dos extremos de Acompanya    | Se asume obligatoriedad en la relación 1:1.                     |
+| Carrega como 1:N (\\\|o--o{)                 | El PDF no indica cardinalidad; hipótesis a confirmar.           |
+| Sin claves foráneas ni tablas intermedias    | Es un modelo conceptual, no el modelo relacional.               |
