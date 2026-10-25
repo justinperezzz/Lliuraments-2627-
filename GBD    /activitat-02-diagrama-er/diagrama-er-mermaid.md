@@ -118,3 +118,22 @@ El PDF solo indica las cardinalidades máximas (1, N, M) con un solo símbolo po
 
 ### 2.1 Enfrenta (Enemic – Personatge)
 Un enemigo puede enfrentarse a varios personajes, y un personaje puede enfrentarse a varios enemigos: relación N:M.
+
+```mermaid
+erDiagram
+    ENEMIC }o--o{ PERSONATGE : "Enfrenta"
+```
+### 2.2 Enfrenta (Enemic – Habilitat)
+El modelo usa el mismo nombre Enfrenta para otra relación, esta vez entre enemigos y habilidades: también N:M. Se conserva el nombre tal como aparece en el PDF.
+
+```mermaid
+erDiagram
+    ENEMIC }o--o{ HABILITAT : "Enfrenta"
+```
+
+### 2.3 Poseeix (Personatge – Habilitat)
+Un personaje puede poseer varias habilidades, y una misma habilidad puede estar asociada a varios personajes: relación M:N.
+```mermaid
+erDiagram
+    PERSONATGE }o--o{ HABILITAT : "Poseeix"
+```
