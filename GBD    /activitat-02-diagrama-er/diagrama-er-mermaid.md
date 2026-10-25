@@ -48,6 +48,7 @@ erDiagram
 
     Personatge
 El identificador es el DNI. Se propone string porque es un identificador, no una cantidad.
+
 ```mermaid
 erDiagram
     ENEMIC {
@@ -60,3 +61,18 @@ erDiagram
         int Agilitat
         int Carisma
     }
+```
+Habilitat
+El identificador es Codi. Cost y Cooldown se proponen como float porque pueden tener decimales.
+
+```mermaid
+erDiagram
+    HABILITAT {
+        int Codi PK
+        string Nom
+        float Cost
+        int Dany
+        float Cooldown
+        string Tipus
+    }
+```
