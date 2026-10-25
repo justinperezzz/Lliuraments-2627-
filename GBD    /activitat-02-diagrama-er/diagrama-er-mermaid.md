@@ -51,11 +51,10 @@ El identificador es el DNI. Se propone string porque es un identificador, no una
 
 ```mermaid
 erDiagram
-    ENEMIC {
-        int Codi PK
+    PERSONATGE {
+        string DNI PK
         string Nom
-        string Tipus
-        int Nivell
+        string Cognom
         int Vida
         int Força
         int Agilitat
