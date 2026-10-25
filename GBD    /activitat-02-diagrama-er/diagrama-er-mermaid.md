@@ -75,3 +75,34 @@ erDiagram
         string Tipus
     }
 ```
+Mascota
+El identificador es Num.Chip; se normaliza como Num_Chip para mantener una nomenclatura uniforme. Motxilla se propone como string, ya que el PDF no concreta qué representa (¿un nombre, una capacidad...?).
+```mermaid
+erDiagram
+    MASCOTA {
+        string Num_Chip PK
+        string Nom
+        string Motxilla
+    }
+```
+
+Item
+El identificador es Codi. Equipable y Comerciable se proponen como boolean porque responden a sí/no. El atributo compuesto Mesures se desglosa en sus tres componentes (X, Y, Z), tal como indica la guía para los atributos compuestos.
+```mermaid
+erDiagram
+    ITEM {
+        int Codi PK
+        string Nom
+        boolean Equipable
+        boolean Comerciable
+        string Tipus
+        float Pes
+        string Qualitat
+        float X
+        float Y
+        float Z
+    }
+```
+
+## 2. Relaciones y cardinalidades
+El modelo conceptual incluye siete relaciones. En Mermaid, cada extremo de la línea usa un símbolo que indica la cardinalidad (mínimo y máximo):
