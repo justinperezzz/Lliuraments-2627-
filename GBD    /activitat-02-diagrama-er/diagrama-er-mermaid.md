@@ -106,3 +106,15 @@ erDiagram
 
 ## 2. Relaciones y cardinalidades
 El modelo conceptual incluye siete relaciones. En Mermaid, cada extremo de la línea usa un símbolo que indica la cardinalidad (mínimo y máximo):
+
+| Símbolo | Significado     |
+| ------- | --------------- |
+| \\\|o   | Cero o uno      |
+| \\\|\\\| | Exactamente uno |
+| }o      | Cero o muchos   |
+| }\\\|   | Uno o muchos    |
+
+El PDF solo indica las cardinalidades máximas (1, N, M) con un solo símbolo por extremo, no la participación mínima. En esta propuesta se asume como convención que el mínimo es cero (participación parcial), salvo en la relación 1:1, donde se opta por obligatoriedad en ambos extremos. Si el enunciado o el profesor indican otra participación mínima, basta con cambiar el símbolo del extremo correspondiente.
+
+### 2.1 Enfrenta (Enemic – Personatge)
+Un enemigo puede enfrentarse a varios personajes, y un personaje puede enfrentarse a varios enemigos: relación N:M.
