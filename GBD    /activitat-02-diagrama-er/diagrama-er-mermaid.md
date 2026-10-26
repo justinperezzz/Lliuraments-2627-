@@ -1,6 +1,6 @@
 # Guia per a la Creació de Diagrames Entitat/Relació (E/R) en format Mermaid
 ## Objetivo
-Este documento explica, paso a paso, cómo se construye un diagrama Entidad/Relación en formato Markdown + Mermaid a partir del diseño conceptual del videojuego que aparece en el PDF adjunto (Model conceptual). Primero se identifican las entidades y sus atributos; después se representan las relaciones con sus cardinalidades y, finalmente, se presenta el diagrama completo.
+Este documento explica, paso a paso, cómo se construye un diagrama Entidad/Relación en formato Markdown + Mermaid a partir del diseño conceptual del videojuego que aparece en el PDF adjunto (Model conceptual). Primero se identifican lasentidades y sus atributos; después se representan las relaciones con sus cardinalidades y, finalmente, se presenta el diagrama completo.
 
 Para construir el diagrama se ha seguido la guía de creación de diagramas E/R en Mermaid del aula.
 
@@ -19,7 +19,7 @@ Siguiendo la guía:
 
 Los nombres de las entidades se escriben en ***MAYÚSCULAS***.
 
-Los atributos se definen dentro de las llaves {} de su entidad, con el tipo de dato y el nombre. El PDF no especifica tipos de datos, así que son una propuesta razonable.
+Los atributos se definen dentro de las llaves {} de su entidad, con el tipo de dato y el nombre. 
 
 Los atributos subrayados en el PDF son los identificadores: se marcan con la restricción PK (Primary Key).
 
@@ -27,7 +27,7 @@ Los atributos compuestos se desglosan directamente en sus componentes como atrib
 
 En el PDF, Comerciable aparece dos veces dentro de Item; se considera un duplicado y se representa una sola vez.
 
-No se añaden claves foráneas ni tablas intermedias: se quiere representar el modelo conceptual, no su transformación al modelo relacional.
+No se añaden claves ni tablas intermedias
 
 ***Enemic***
 El identificador es Codi. El resto de atributos describen al enemigo y sus estadísticas.
@@ -139,7 +139,7 @@ erDiagram
 ```
 
 ### 2.4 Combina amb (Habilitat – Habilitat)
-Es una relación reflexiva (o recursiva): la entidad HABILITAT se relaciona consigo misma. Una habilidad puede combinarse con varias habilidades, y puede aparecer en varias combinaciones: relación M:N.
+Es una relación reflexiva : la entidad **HABILITAT** se relaciona consigo misma. Una habilidad puede combinarse con varias habilidades, y puede aparecer en varias combinaciones: relación M:N.
 
 ```mermaid
 erDiagram
@@ -147,7 +147,7 @@ erDiagram
 ```
 
 ### 2.5 Acompanya (Mascota – Personatge)
-Relación 1:1: cada mascota acompaña exactamente a un personaje y cada personaje está acompañado por exactamente una mascota. Se escribe MASCOTA primero para que la etiqueta se lea de forma natural ("una mascota acompaña a un personaje").
+Relación 1:1: cada mascota acompaña exactamente a un personaje y cada personaje está acompañado por exactamente una mascota.
 
 En esta propuesta se usa || en los dos extremos, lo que supone obligatoriedad en ambos sentidos; el PDF indica el máximo 1 pero no el mínimo.
 
@@ -179,8 +179,8 @@ erDiagram
 | Tipos de datos (int, string, float, boolean) | El PDF no los especifica; son una propuesta.                    |
 | Num_Chip en lugar de Num.Chip                | Normalización para mantener una nomenclatura uniforme.          |
 | Mesures desglosado en X, Y, Z                | Convención de la guía para atributos compuestos.                |
-| Comerciable representado una sola vez        | Aparece duplicado en el PDF; parece un error del dibujo.        |
+| Comerciable representado una sola vez        | Aparece duplicado en el PDF; es un error solo cojo 1            |
 | Mínimo 0 en las relaciones N:M y M:N         | El PDF solo indica los máximos; se asume participación parcial. |
 | \\\|\\\| en los dos extremos de Acompanya    | Se asume obligatoriedad en la relación 1:1.                     |
-| Carrega como 1:N (\\\|o--o{)                 | El PDF no indica cardinalidad; hipótesis a confirmar.           |
-| Sin claves foráneas ni tablas intermedias    | Es un modelo conceptual, no el modelo relacional.               |
+| Carrega como 1:N (\\\|o--o{)                 | El PDF no indica cardinalidad;                                  |
+| Sin claves          ni tablas intermedias    | Es un modelo conceptual                         .               |
