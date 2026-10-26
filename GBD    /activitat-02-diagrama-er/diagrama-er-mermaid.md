@@ -17,7 +17,7 @@ Del modelo conceptual se extraen cinco entidades:
 ## Convenciones aplicadas
 Siguiendo la guía:
 
-Los nombres de las entidades se escriben en MAYÚSCULAS.
+Los nombres de las entidades se escriben en ***MAYÚSCULAS***.
 
 Los atributos se definen dentro de las llaves {} de su entidad, con el tipo de dato y el nombre. El PDF no especifica tipos de datos, así que son una propuesta razonable.
 
@@ -29,7 +29,7 @@ En el PDF, Comerciable aparece dos veces dentro de Item; se considera un duplica
 
 No se añaden claves foráneas ni tablas intermedias: se quiere representar el modelo conceptual, no su transformación al modelo relacional.
 
-Enemic
+***Enemic***
 El identificador es Codi. El resto de atributos describen al enemigo y sus estadísticas.
 
 ```mermaid
@@ -46,7 +46,7 @@ erDiagram
     }
 ```
 
-    Personatge
+   ***Personatge***
 El identificador es el DNI. Se propone string porque es un identificador, no una cantidad.
 
 ```mermaid
@@ -61,7 +61,7 @@ erDiagram
         int Carisma
     }
 ```
-Habilitat
+***Habilitata***
 El identificador es Codi. Cost y Cooldown se proponen como float porque pueden tener decimales.
 
 ```mermaid
@@ -75,7 +75,7 @@ erDiagram
         string Tipus
     }
 ```
-Mascota
+***Mascota***
 El identificador es Num.Chip; se normaliza como Num_Chip para mantener una nomenclatura uniforme. Motxilla se propone como string, ya que el PDF no concreta qué representa (¿un nombre, una capacidad...?).
 ```mermaid
 erDiagram
@@ -86,7 +86,7 @@ erDiagram
     }
 ```
 
-Item
+***Item***
 El identificador es Codi. Equipable y Comerciable se proponen como boolean porque responden a sí/no. El atributo compuesto Mesures se desglosa en sus tres componentes (X, Y, Z), tal como indica la guía para los atributos compuestos.
 ```mermaid
 erDiagram
