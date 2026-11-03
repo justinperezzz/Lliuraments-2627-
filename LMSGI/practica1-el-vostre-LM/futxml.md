@@ -59,7 +59,7 @@ Un **lenguaje de marcas** es una forma de **organizar y describir información m
 
 ### Requisitos para ser lenguaje de marcas
 
-Según el enunciado, para clasificar nuestra creación como lenguaje de marcas debe cumplir:
+Según el enunciado, debe cumplir:
 
 1. Basarse en **texto plano**.
 2. Hacer uso de **metadatos** 
@@ -133,7 +133,7 @@ La etiqueta `<equipo>` indica que el dato "Real Madrid" representa **el nombre d
 <partido temporada=2026-2027 competicion=Liga>
 ```
 
-**Regla 5: orden correcto (anidación)**
+**Regla 5: orden correcto **
 
 ```xml
 <!-- Correcto -->
@@ -334,9 +334,7 @@ Se pueden añadir elementos opcionales. Aquí cada gol lleva el minuto como atri
 </partido>
 ```
 
-(Los nombres de los jugadores son inventados.)
-
-### Cómo lo procesaría un programa (ejemplo en Python)
+### Cómo lo procesaría un programa (en Python)
 
 Como FUTXML es texto con estructura XML, un programa puede leerlo con una librería estándar. Los **elementos** se leen con `find(...).text` y los **metadatos** (atributos) con `get(...)`:
 
