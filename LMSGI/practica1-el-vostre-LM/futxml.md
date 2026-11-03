@@ -9,13 +9,13 @@
 
 ## Índice
 
-1. [Introducción a los lenguajes de marcas](#1-introducción-a-los-lenguajes-de-marcas)
-2. [Presentamos FUTXML y sus reglas](#2-presentamos-futxml-y-sus-reglas)
-3. [Clasificación de FUTXML](#3-clasificación-de-futxml)
-4. [Caso de uso adecuado](#4-caso-de-uso-adecuado)
-5. [Ejemplo de uso explicado](#5-ejemplo-de-uso-explicado)
-6. [Caso de uso inadecuado](#6-caso-de-uso-inadecuado)
-7. [¿Por qué FUTXML es un lenguaje de marcas?](#7-por-qué-futxml-es-un-lenguaje-de-marcas)
+1. [Introducción a los lenguajes de marcas]
+2. [FUTXML y sus reglas]
+3. [Clasificación de FUTXML]
+4. [Caso de uso adecuado]
+5. [Ejemplo de uso explicado]
+6. [Caso de uso inadecuado]
+7. [¿Por qué FUTXML es un lenguaje de marcas?]
 
 ---
 
@@ -23,17 +23,7 @@
 
 ### ¿Qué son?
 
-Un **lenguaje de marcas** (o de marcado) es una forma de **organizar y describir información mediante etiquetas** (marcas) escritas dentro del propio texto. Las etiquetas no son los datos: sirven para indicar **qué significa** cada dato o **cómo está estructurado** el documento.
-
-Ejemplo muy simple en HTML:
-
-```html
-<h1>Mi primera página</h1>
-<p>Esto es un párrafo.</p>
-```
-
-- `<h1>` indica que el texto es un título.
-- `<p>` indica que el texto es un párrafo.
+Un **lenguaje de marcas** es una forma de **organizar y describir información mediante etiquetas** (marcas) escritas dentro del propio texto. Las etiquetas no son los datos: sirven para indicar **qué significa** cada dato o **cómo está estructurado** el documento.
 
 ### Características principales
 
@@ -44,19 +34,18 @@ Ejemplo muy simple en HTML:
 | **Automatización** | Un programa puede leer y procesar la información fácilmente. |
 | **Representación** | Facilitan mostrar o interpretar los datos almacenados. |
 
-### Orígenes (breve historia)
+### Orígenes 
 
-- **Años 60:** IBM crea **GML** (*Generalized Markup Language*) para poder reutilizar documentos en distintos sistemas.
+- **Años 60:** IBM crea **GML**  para poder reutilizar documentos en distintos sistemas.
 - **1986:** GML se convierte en el estándar **SGML**, la base de los lenguajes de marcas posteriores.
 - **1991:** Tim Berners-Lee crea **HTML** para estructurar páginas web.
 - **1998:** el W3C publica **XML**, una versión simplificada de SGML para guardar e intercambiar datos.
 
 ### ¿Para qué se utilizan?
 
-- Crear y estructurar **páginas web** (HTML).
-- **Guardar e intercambiar datos** entre aplicaciones distintas (XML).
-- **Documentación** y notas sencillas (Markdown).
-- Gráficos vectoriales (SVG) y sindicación de noticias (RSS).
+- Crear y estructurar **páginas web** 
+- **Guardar e intercambiar datos** entre aplicaciones distintas 
+- **Documentación** y notas sencillas 
 
 ### Ejemplos conocidos
 
@@ -67,20 +56,19 @@ Ejemplo muy simple en HTML:
 | **Markdown** | Da formato a texto de forma sencilla | `**negrita**` |
 | **SVG** | Describe imágenes vectoriales | `<circle r="10"/>` |
 
-> **Nota:** un lenguaje de marcas **no es un lenguaje de programación**. No ejecuta instrucciones ni hace cálculos: solo describe información.
 
 ### Requisitos para ser lenguaje de marcas
 
 Según el enunciado, para clasificar nuestra creación como lenguaje de marcas debe cumplir:
 
 1. Basarse en **texto plano**.
-2. Hacer uso de **metadatos** (no confundir con metalenguaje).
+2. Hacer uso de **metadatos** 
 3. Facilitar el **procesamiento automático** de los datos por un programa.
-4. Facilitar la **representación o interpretación** de los datos almacenados.
+4. Facilitar la **representación ** de los datos almacenados.
 
 ---
 
-## 2. Presentamos FUTXML y sus reglas
+## 2.FUTXML y sus reglas
 
 **FUTXML** es un lenguaje inventado por nosotros para **guardar información sobre partidos de fútbol**.
 
@@ -106,8 +94,8 @@ La etiqueta `<equipo>` indica que el dato "Real Madrid" representa **el nombre d
 | 2 | **Elemento raíz** | Todo partido está dentro de `<partido>`. |
 | 3 | **Datos obligatorios** | Equipo local y visitante, fecha y goles. |
 | 4 | **Metadatos** | La temporada y la competición se escriben como **atributos** de `<partido>`. |
-| 5 | **Orden correcto** | Las etiquetas deben estar bien anidadas (se cierra primero la última que se abrió). |
-| 6 | **Texto plano** | Los datos son legibles y fáciles de guardar en un archivo `.txt` o `.xml`. |
+| 5 | **Orden correcto** | Las etiquetas deben estar bien escritas (se cierra primero la última que se abrió). |
+| 6 | **Texto plano** | Los datos se leen bien y son  fáciles de guardar en un archivo `.txt` o `.xml`. |
 
 ### Elementos de FUTXML
 
