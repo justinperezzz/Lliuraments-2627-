@@ -1,4 +1,4 @@
-# Pràctica 1: Característiques dels llenguatges de marques
+# Pràctica 1
 
 # FUTXML: un lenguaje de marcas para el fútbol
 
